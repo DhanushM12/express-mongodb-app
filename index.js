@@ -4,11 +4,11 @@ const port = 8000;
 
 const db = require('./config/mongoose');
 
-app.use(express.json());
+app.use(express.json())
 
-// const subscriberRouter = require('./routes/index');
+const subscriberRouter = require('./routes/index');
 
-// app.use('/subscriber', subscriberRouter);
+app.use('/subscriber', subscriberRouter);
 
 app.listen(port, function(err){
     if(err){
