@@ -3,9 +3,25 @@ POST http://localhost:8000/subscriber/
 Content-Type: application/json
 
 {
-    "name" : "karan",
-    "channel" : "codingninjas"
+    "name" : "***",
+    "channel" : "***"
 }
 
 ###
 GET http://localhost:8000/subscriber/
+
+###
+
+GET http://localhost:8000/subscriber/620bd2f43dd5c7fba8378ad30030303
+
+
+###
+DELETE http://localhost:8000/subscriber/620bd28a3dd5c7fba8378acf20802802
+
+###
+PATCH http://localhost:8000/subscriber/620bd2f43dd5c7fba8378ad302820820
+Content-Type: application/json
+
+{
+    "channel" : "***"
+}
